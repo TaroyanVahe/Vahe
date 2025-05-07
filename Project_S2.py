@@ -35,7 +35,7 @@ class MailMergeGenerator:
         start, end = self.current_delimiters
         pattern = re.escape(start) + r'(.*?)' + re.escape(end)
         matches = re.findall(pattern, self.template_content)
-        self.placeholders = list(dict.fromkeys(matches))  # preserve order
+        self.placeholders = list(dict.fromkeys(matches)) 
 
     def set_delimiters(self, start: str, end: str):
         self.current_delimiters = (start, end)
