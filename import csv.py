@@ -6,10 +6,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 class MailMergeGenerator:
-    """
-    A sophisticated mail merge system that generates personalized documents
-    from templates using data from CSV files.
-    """
+    
 
     DEFAULT_DELIMITERS = ('{{', '}}')
 
